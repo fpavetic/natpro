@@ -1,0 +1,30 @@
+Pristup rjesenja je: 
+1) u source hardkodirati po jednog predstavnika svake klase
+2) avione orijentirati u isti smjer i skalirati na istu velicinu
+3) za ucitani avion naci najblizi od onih hardkodiranih koristeci
+   Jaccardov index za mjerenje slicnosti (presjek/unija)
+   http://en.wikipedia.org/wiki/Jaccard_index
+
+Cijelo rjesenje podijeljeno je u vise fileova:
+jaccard.cpp
+geometry.part.h
+helpers.part.h
+pbm.part.h
+training_data.part.h
+
+Programcic prepare_submission sluzi kako bi iskombinirao
+headere i main u jedan cpp file koji je moguce poslati na
+evaluator.
+
+test_polygonops i test_angle sluze za testiranje rotacije
+aviona i racunanja presjeka poligona.
+
+Pokretanje skripte ./test_all.sh ce izvrtiti testiranje
+na cijelom datasetu.
+
+Dataset preuzet od:
+[1] http://visionlab.uta.edu/shape_data.htm
+[2] N. Thakoor, J. Gao, S. Jung, "Hidden Markov Model-Based 
+Weighted Likelihood Discriminant for 2-D Shape Classification",  
+IEEE Transactions on Image Processing, Volume 16, Issue 11, 
+Nov. 2007, Page(s): 2707 - 2719.
